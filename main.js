@@ -5,7 +5,7 @@ function sendMessage() {
     const userMessage = userInput.value;
     displayMessage("You: " + userMessage);
 
-    const apiKey = "asst_vti4Zz9zLZJB3l16Yd8mIcNO"; // Remplace par ta clé réelle
+    const apiKey = "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"; // Remplace par ta clé réelle
     fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
