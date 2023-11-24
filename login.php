@@ -1,13 +1,11 @@
-<!-- login.php -->
-
 <?php
 session_start(); // Démarre la session
 
 // À remplacer avec tes informations de base de données
-$servername = "localhost";
-$username = "paul";
-$password = "123456";
-$dbname = "nom_de_ta_base_de_donnees";
+$servername = "localhost"; // Le serveur MySQL, probablement localhost
+$username = "ton_utilisateur"; // Ton nom d'utilisateur MySQL
+$password = "ton_mot_de_passe"; // Ton mot de passe MySQL
+$dbname = "nom_de_ta_base_de_donnees"; // Le nom de ta base de données MySQL
 
 // Création de la connexion
 $conn = new mysqli($servername, $username, $password, $dbname);
