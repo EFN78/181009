@@ -1,8 +1,12 @@
+<!-- login.php -->
+
 <?php
+session_start(); // Démarre la session
+
 // À remplacer avec tes informations de base de données
 $servername = "localhost";
 $username = "paul";
-$password = "test";
+$password = "123456";
 $dbname = "nom_de_ta_base_de_donnees";
 
 // Création de la connexion
@@ -22,7 +26,8 @@ $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'"
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "Connexion réussie!";
+    $_SESSION['username'] = $username; // Définit la session avec le nom d'utilisateur
+    header("Location: home.php"); // Redirige vers la page d'accueil si la connexion réussit
 } else {
     echo "Identifiants invalides";
 }
