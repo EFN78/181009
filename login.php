@@ -1,8 +1,8 @@
 <?php
 // À remplacer avec tes informations de base de données
 $servername = "localhost";
-$username = "ton_utilisateur";
-$password = "ton_mot_de_passe";
+$username = "paul";
+$password = "test";
 $dbname = "nom_de_ta_base_de_donnees";
 
 // Création de la connexion
